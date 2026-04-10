@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | Ganadería Regenerativa — Agencia Digital</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0f0a;
+  --bg-card: #111a11;
+  --bg-card-hover: #152015;
+  --border: #1e2e1e;
+  --border-accent: #2d5a2d;
+  --text: #e8efe8;
+  --text-muted: #7a917a;
+  --text-dim: #4a5f4a;
+  --green-primary: #4ade80;
+  --green-dark: #22c55e;
+  --green-glow: rgba(74, 222, 128, 0.15);
+  --red: #f87171;
+  --red-glow: rgba(248, 113, 113, 0.1);
+  --yellow: #fbbf24;
+  --yellow-glow: rgba(251, 191, 36, 0.1);
+  --blue: #60a5fa;
+  --ig-gradient: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  --fb-color: #1877f2;
+  --yt-color: #ff0000;
+  --tt-color: #00f2ea;
+  --font: 'DM Sans', system-ui, sans-serif;
+  --mono: 'DM Mono', monospace;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* === HEADER === */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10, 15, 10, 0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+}
+
+.header-title {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.header-subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: rgba(74, 222, 128, 0.1);
+  border: 1px solid rgba(74, 222, 128, 0.2);
+  font-size: 12px;
+  color: var(--green-primary);
+  font-weight: 500;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green-primary);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.week-selector {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 13px;
+  padding: 6px 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.week-selector:focus { border-color: var(--green-primary); }
+
+/* === MAIN LAYOUT === */
+.main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 32px 64px;
+}
+
+/* === OVERVIEW STRIP === */
+.overview-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.platform-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.platform-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.platform-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+.platform-card.instagram::before { background: var(--ig-gradient); }
+.platform-card.facebook::before { background: var(--fb-color); }
+.platform-card.youtube::before { background: var(--yt-color); }
+.platform-card.tiktok::before { background: var(--tt-color); }
+
+.platform-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.platform-name {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.platform-icon {
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.metric-big {
+  font-family: var(--mono);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.metric-label {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+}
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+
+.metric-row-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.metric-row-value {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.change-positive { color: var(--green-primary); }
+.change-negative { color: var(--red); }
+.change-neutral { color: var(--text-muted); }
+
+/* === SECTIONS === */
+.section {
+  margin-bottom: 24px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+/* === DIAGNOSTIC PANEL === */
+.diagnostic-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.diag-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.diag-resumen {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.diag-hallazgo {
+  padding: 12px 16px;
+  border-left: 3px solid var(--green-primary);
+  background: var(--green-glow);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.diag-hallazgo.negativo {
+  border-left-color: var(--red);
+  background: var(--red-glow);
+}
+
+.diag-hallazgo.neutro {
+  border-left-color: var(--yellow);
+  background: var(--yellow-glow);
+}
+
+.acciones-title {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--green-primary);
+  margin-bottom: 16px;
+}
+
+.accion-item {
+  padding: 16px;
+  background: rgba(74, 222, 128, 0.05);
+  border: 1px solid rgba(74, 222, 128, 0.15);
+  border-radius: var(--radius-sm);
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.accion-numero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--green-primary);
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+/* === CHART AREA === */
+.chart-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.chart-canvas-wrap {
+  position: relative;
+  height: 280px;
+  margin-top: 16px;
+}
+
+.chart-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.chart-tab {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.chart-tab:hover { color: var(--text); }
+.chart-tab.active {
+  background: rgba(74, 222, 128, 0.1);
+  color: var(--green-primary);
+  border-color: rgba(74, 222, 128, 0.2);
+}
+
+/* === TOP CONTENT TABLE === */
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.content-table th {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.content-table td {
+  font-size: 13px;
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  vertical-align: middle;
+}
+
+.content-table tr:hover td {
+  background: rgba(255,255,255,0.02);
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badge-educativo { background: rgba(74, 222, 128, 0.15); color: var(--green-primary); }
+.badge-testimonial { background: rgba(96, 165, 250, 0.15); color: var(--blue); }
+.badge-polemico { background: rgba(251, 191, 36, 0.15); color: var(--yellow); }
+.badge-demostrativo { background: rgba(167, 139, 250, 0.15); color: #a78bfa; }
+.badge-promocion { background: rgba(248, 113, 113, 0.15); color: var(--red); }
+.badge-entretenimiento { background: rgba(45, 212, 191, 0.15); color: #2dd4bf; }
+
+.badge-ig { background: rgba(131, 58, 180, 0.15); color: #c13584; }
+.badge-fb { background: rgba(24, 119, 242, 0.15); color: var(--fb-color); }
+.badge-yt { background: rgba(255, 0, 0, 0.15); color: var(--yt-color); }
+.badge-tt { background: rgba(0, 242, 234, 0.15); color: var(--tt-color); }
+
+/* === EMPTY STATE === */
+.empty-state {
+  text-align: center;
+  padding: 60px 24px;
+  color: var(--text-muted);
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.3;
+}
+
+.empty-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.empty-text {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* === FOOTER === */
+.footer {
+  text-align: center;
+  padding: 32px;
+  font-size: 12px;
+  color: var(--text-dim);
+  border-top: 1px solid var(--border);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .overview-strip { grid-template-columns: repeat(2, 1fr); }
+  .diagnostic-grid { grid-template-columns: 1fr; }
+  .main { padding: 16px; }
+  .header { padding: 12px 16px; }
+}
+
+@media (max-width: 640px) {
+  .overview-strip { grid-template-columns: 1fr; }
+  .content-table { font-size: 12px; }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">
+    <div class="logo-mark">GR</div>
+    <div>
+      <div class="header-title">Ganaderia Regenerativa</div>
+      <div class="header-subtitle">Agencia Digital — Dashboard de Metricas</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="status-badge">
+      <span class="status-dot"></span>
+      <span id="lastUpdate">Cargando...</span>
+    </div>
+    <select class="week-selector" id="weekSelector">
+      <option>Cargando semanas...</option>
+    </select>
+  </div>
+</header>
+
+<main class="main">
+  <!-- PLATFORM OVERVIEW -->
+  <section class="section">
+    <div class="overview-strip" id="platformCards">
+      <!-- Generated by JS -->
+    </div>
+  </section>
+
+  <!-- TREND CHART -->
+  <section class="section">
+    <div class="chart-container">
+      <div class="section-header">
+        <span class="section-title">Tendencia Historica</span>
+        <div class="chart-tabs" id="chartTabs">
+          <button class="chart-tab active" data-metric="seguidores">Seguidores</button>
+          <button class="chart-tab" data-metric="alcance">Alcance</button>
+          <button class="chart-tab" data-metric="engagement">Engagement</button>
+          <button class="chart-tab" data-metric="reproducciones">Reproducciones</button>
+        </div>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="trendChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIAGNOSTIC -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-title">Diagnostico de la Agencia</span>
+    </div>
+    <div class="diagnostic-grid" id="diagnosticArea">
+      <!-- Generated by JS -->
+    </div>
+  </section>
+
+  <!-- TOP CONTENT -->
+  <section class="section">
+    <div class="chart-container">
+      <div class="section-header">
+        <span class="section-title">Top Contenidos de la Semana</span>
+      </div>
+      <div id="topContentArea">
+        <!-- Generated by JS -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  GanaderiaRegenerativa.com — Dashboard generado por la Agencia Digital GR — Datos actualizados semanalmente
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+// === DATA LOADING ===
+let dashboardData = null;
+let currentWeekIndex = 0;
+let trendChart = null;
+
+async function loadData() {
+  try {
+    const resp = await fetch('data/dashboard-data.json?' + Date.now());
+    dashboardData = await resp.json();
+    initDashboard();
+  } catch (e) {
+    document.getElementById('platformCards').innerHTML = `
+      <div class="empty-state" style="grid-column: 1/-1;">
+        <div class="empty-icon">⚠</div>
+        <div class="empty-title">No se pudo cargar dashboard-data.json</div>
+        <div class="empty-text">Asegurate de que el archivo existe en la carpeta data/</div>
+      </div>`;
+  }
+}
+
+function initDashboard() {
+  const weeks = dashboardData.semanas;
+  if (!weeks || weeks.length === 0) return;
+
+  // Populate week selector
+  const sel = document.getElementById('weekSelector');
+  sel.innerHTML = '';
+  weeks.forEach((w, i) => {
+    const opt = document.createElement('option');
+    opt.value = i;
+    opt.textContent = w.id + ' (' + w.fecha_inicio + ' al ' + w.fecha_fin + ')';
+    sel.appendChild(opt);
+  });
+  sel.value = weeks.length - 1;
+  currentWeekIndex = weeks.length - 1;
+
+  sel.addEventListener('change', (e) => {
+    currentWeekIndex = parseInt(e.target.value);
+    renderWeek();
+  });
+
+  document.getElementById('lastUpdate').textContent = 'Actualizado: ' + dashboardData.meta.ultima_actualizacion;
+
+  // Chart tabs
+  document.querySelectorAll('.chart-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.chart-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      renderTrendChart(tab.dataset.metric);
+    });
+  });
+
+  renderWeek();
+  renderTrendChart('seguidores');
+}
+
+function fmt(n) {
+  if (n === null || n === undefined) return '—';
+  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+  if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
+  return n.toLocaleString('es-MX');
+}
+
+function fmtPct(n) {
+  if (n === null || n === undefined) return '—';
+  return n.toFixed(2) + '%';
+}
+
+function getChange(current, previous) {
+  if (!current || !previous || previous === 0) return { text: '—', cls: 'change-neutral' };
+  const pct = ((current - previous) / previous * 100).toFixed(1);
+  if (pct > 0) return { text: '+' + pct + '%', cls: 'change-positive' };
+  if (pct < 0) return { text: pct + '%', cls: 'change-negative' };
+  return { text: '0%', cls: 'change-neutral' };
+}
+
+function renderWeek() {
+  const week = dashboardData.semanas[currentWeekIndex];
+  const prevWeek = currentWeekIndex > 0 ? dashboardData.semanas[currentWeekIndex - 1] : null;
+
+  renderPlatformCards(week, prevWeek);
+  renderDiagnostic(week);
+  renderTopContent(week);
+}
+
+function renderPlatformCards(week, prevWeek) {
+  const platforms = [
+    { key: 'instagram', name: 'Instagram', icon: '📷', css: 'instagram',
+      mainMetric: 'seguidores_total', mainLabel: 'Seguidores',
+      rows: [
+        { label: 'Alcance', key: 'alcance' },
+        { label: 'Engagement Rate', key: 'engagement_rate', isPct: true },
+        { label: 'Saves', key: 'saves' },
+        { label: 'Reels Views', key: 'reels_reproducciones' }
+      ]
+    },
+    { key: 'facebook', name: 'Facebook', icon: '📘', css: 'facebook',
+      mainMetric: 'seguidores_total', mainLabel: 'Seguidores',
+      rows: [
+        { label: 'Alcance', key: 'alcance' },
+        { label: 'Engagement Rate', key: 'engagement_rate', isPct: true },
+        { label: 'Shares', key: 'shares' },
+        { label: 'Video Views', key: 'video_reproducciones' }
+      ]
+    },
+    { key: 'youtube', name: 'YouTube', icon: '📺', css: 'youtube',
+      mainMetric: 'suscriptores_total', mainLabel: 'Suscriptores',
+      rows: [
+        { label: 'Vistas', key: 'vistas' },
+        { label: 'Watch Time (hrs)', key: 'watch_time_horas' },
+        { label: 'CTR Miniaturas', key: 'ctr_miniaturas', isPct: true },
+        { label: 'Retencion', key: 'retencion_promedio', isPct: true }
+      ]
+    },
+    { key: 'tiktok', name: 'TikTok', icon: '🎵', css: 'tiktok',
+      mainMetric: 'seguidores_total', mainLabel: 'Seguidores',
+      rows: [
+        { label: 'Reproducciones', key: 'reproducciones' },
+        { label: 'Engagement Rate', key: 'engagement_rate', isPct: true },
+        { label: 'Shares', key: 'shares' },
+        { label: 'Retencion', key: 'retencion_promedio', isPct: true }
+      ]
+    }
+  ];
+
+  const container = document.getElementById('platformCards');
+  container.innerHTML = '';
+
+  platforms.forEach(p => {
+    const data = week.plataformas[p.key];
+    const prevData = prevWeek ? prevWeek.plataformas[p.key] : null;
+    const mainVal = data ? data[p.mainMetric] : null;
+    const prevMainVal = prevData ? prevData[p.mainMetric] : null;
+    const change = getChange(mainVal, prevMainVal);
+
+    let rowsHtml = '';
+    if (data) {
+      p.rows.forEach(r => {
+        const val = data[r.key];
+        rowsHtml += `<div class="metric-row">
+          <span class="metric-row-label">${r.label}</span>
+          <span class="metric-row-value">${r.isPct ? fmtPct(val) : fmt(val)}</span>
+        </div>`;
+      });
+    }
+
+    container.innerHTML += `
+      <div class="platform-card ${p.css}">
+        <div class="platform-header">
+          <span class="platform-name">${p.name}</span>
+          <span class="platform-icon">${p.icon}</span>
+        </div>
+        <div class="metric-big">${fmt(mainVal)}</div>
+        <div class="metric-label">${p.mainLabel} <span class="${change.cls}" style="font-family:var(--mono);margin-left:6px;">${change.text}</span></div>
+        ${rowsHtml}
+      </div>`;
+  });
+}
+
+function renderDiagnostic(week) {
+  const diag = week.diagnostico;
+  const container = document.getElementById('diagnosticArea');
+
+  if (!diag || (!diag.resumen && diag.hallazgos.length === 0)) {
+    container.innerHTML = `<div class="diag-card" style="grid-column:1/-1;">
+      <div class="empty-state">
+        <div class="empty-icon">📊</div>
+        <div class="empty-title">Sin diagnostico para esta semana</div>
+        <div class="empty-text">Sube tus estadisticas en Claude y el analisis aparecera aqui.</div>
+      </div>
+    </div>`;
+    return;
+  }
+
+  let hallazgosHtml = '';
+  diag.hallazgos.forEach(h => {
+    const tipo = h.tipo || 'neutro';
+    hallazgosHtml += `<div class="diag-hallazgo ${tipo}">${h.texto}</div>`;
+  });
+
+  let accionesHtml = '';
+  diag.acciones_recomendadas.forEach((a, i) => {
+    accionesHtml += `<div class="accion-item"><span class="accion-numero">${i + 1}</span>${a}</div>`;
+  });
+
+  container.innerHTML = `
+    <div class="diag-card">
+      <div class="section-title" style="margin-bottom:16px;">Resumen Ejecutivo</div>
+      <div class="diag-resumen">${diag.resumen}</div>
+      ${hallazgosHtml}
+    </div>
+    <div class="diag-card">
+      <div class="acciones-title">Acciones Recomendadas</div>
+      ${accionesHtml || '<div class="empty-text">Sin acciones definidas para esta semana.</div>'}
+    </div>`;
+}
+
+function renderTopContent(week) {
+  const content = week.top_contenidos || [];
+  const container = document.getElementById('topContentArea');
+
+  if (content.length === 0) {
+    container.innerHTML = `<div class="empty-state">
+      <div class="empty-icon">📝</div>
+      <div class="empty-title">Sin contenidos registrados</div>
+      <div class="empty-text">Cuando se analicen posts individuales, los mejores apareceran aqui.</div>
+    </div>`;
+    return;
+  }
+
+  const badgeCat = { 'educativo': 'badge-educativo', 'testimonial': 'badge-testimonial', 'polemico': 'badge-polemico', 'demostrativo': 'badge-demostrativo', 'promocion': 'badge-promocion', 'entretenimiento': 'badge-entretenimiento' };
+  const badgePlat = { 'instagram': 'badge-ig', 'facebook': 'badge-fb', 'youtube': 'badge-yt', 'tiktok': 'badge-tt' };
+
+  let rows = '';
+  content.forEach(c => {
+    rows += `<tr>
+      <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${c.titulo || '—'}</td>
+      <td><span class="badge ${badgePlat[c.plataforma] || ''}">${c.plataforma || '—'}</span></td>
+      <td><span class="badge ${badgeCat[c.categoria] || ''}">${c.categoria || '—'}</span></td>
+      <td style="font-family:var(--mono);">${fmt(c.alcance)}</td>
+      <td style="font-family:var(--mono);">${fmtPct(c.engagement_rate)}</td>
+      <td style="font-family:var(--mono);">${fmt(c.saves)}</td>
+      <td style="font-family:var(--mono);">${c.retencion ? c.retencion + '%' : '—'}</td>
+    </tr>`;
+  });
+
+  container.innerHTML = `<table class="content-table">
+    <thead><tr>
+      <th>Contenido</th><th>Plataforma</th><th>Categoria</th><th>Alcance</th><th>ER%</th><th>Saves</th><th>Retencion</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+}
+
+function renderTrendChart(metric) {
+  const weeks = dashboardData.semanas;
+  if (weeks.length < 2) {
+    if (trendChart) trendChart.destroy();
+    return;
+  }
+
+  const metricMap = {
+    seguidores: { ig: 'seguidores_total', fb: 'seguidores_total', yt: 'suscriptores_total', tt: 'seguidores_total', label: 'Seguidores / Suscriptores' },
+    alcance: { ig: 'alcance', fb: 'alcance', yt: 'vistas', tt: 'reproducciones', label: 'Alcance / Vistas' },
+    engagement: { ig: 'engagement_rate', fb: 'engagement_rate', yt: 'retencion_promedio', tt: 'engagement_rate', label: 'Engagement Rate / Retencion (%)' },
+    reproducciones: { ig: 'reels_reproducciones', fb: 'video_reproducciones', yt: 'vistas', tt: 'reproducciones', label: 'Reproducciones de Video' }
+  };
+
+  const m = metricMap[metric];
+  const labels = weeks.map(w => w.id);
+
+  const datasets = [
+    { label: 'Instagram', data: weeks.map(w => w.plataformas.instagram ? w.plataformas.instagram[m.ig] : null), borderColor: '#c13584', backgroundColor: 'rgba(193,53,132,0.1)', tension: 0.3, pointRadius: 4 },
+    { label: 'Facebook', data: weeks.map(w => w.plataformas.facebook ? w.plataformas.facebook[m.fb] : null), borderColor: '#1877f2', backgroundColor: 'rgba(24,119,242,0.1)', tension: 0.3, pointRadius: 4 },
+    { label: 'YouTube', data: weeks.map(w => w.plataformas.youtube ? w.plataformas.youtube[m.yt] : null), borderColor: '#ff0000', backgroundColor: 'rgba(255,0,0,0.1)', tension: 0.3, pointRadius: 4 },
+    { label: 'TikTok', data: weeks.map(w => w.plataformas.tiktok ? w.plataformas.tiktok[m.tt] : null), borderColor: '#00f2ea', backgroundColor: 'rgba(0,242,234,0.1)', tension: 0.3, pointRadius: 4 }
+  ];
+
+  if (trendChart) trendChart.destroy();
+
+  trendChart = new Chart(document.getElementById('trendChart'), {
+    type: 'line',
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { position: 'top', labels: { color: '#7a917a', font: { family: 'DM Sans', size: 12 }, usePointStyle: true, pointStyle: 'circle' } },
+        tooltip: { backgroundColor: '#1a2a1a', titleColor: '#e8efe8', bodyColor: '#e8efe8', borderColor: '#2d5a2d', borderWidth: 1, titleFont: { family: 'DM Sans' }, bodyFont: { family: 'DM Mono' }, padding: 12, cornerRadius: 8 }
+      },
+      scales: {
+        x: { ticks: { color: '#4a5f4a', font: { family: 'DM Mono', size: 11 } }, grid: { color: 'rgba(255,255,255,0.04)' } },
+        y: { ticks: { color: '#4a5f4a', font: { family: 'DM Mono', size: 11 } }, grid: { color: 'rgba(255,255,255,0.04)' } }
+      }
+    }
+  });
+}
+
+// === INIT ===
+loadData();
+</script>
+</body>
+</html>

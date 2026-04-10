@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "proyecto": "Ganadería Regenerativa",
+    "web": "GanaderiaRegenerativa.com",
+    "ultima_actualizacion": "2026-04-10",
+    "version": "1.0"
+  },
+  "semanas": [
+    {
+      "id": "2026-W14",
+      "fecha_inicio": "2026-03-30",
+      "fecha_fin": "2026-04-05",
+      "plataformas": {
+        "instagram": {
+          "seguidores_total": null,
+          "seguidores_nuevos": null,
+          "seguidores_perdidos": null,
+          "alcance": null,
+          "impresiones": null,
+          "engagement_total": null,
+          "engagement_rate": null,
+          "likes": null,
+          "comentarios": null,
+          "shares": null,
+          "saves": null,
+          "clics_enlace": null,
+          "clics_perfil": null,
+          "stories_alcance": null,
+          "reels_reproducciones": null,
+          "reels_retencion_promedio": null
+        },
+        "facebook": {
+          "seguidores_total": null,
+          "alcance": null,
+          "impresiones": null,
+          "engagement_total": null,
+          "engagement_rate": null,
+          "likes": null,
+          "comentarios": null,
+          "shares": null,
+          "clics_enlace": null,
+          "video_reproducciones": null,
+          "video_retencion_promedio": null
+        },
+        "youtube": {
+          "suscriptores_total": null,
+          "suscriptores_nuevos": null,
+          "vistas": null,
+          "watch_time_horas": null,
+          "engagement_total": null,
+          "likes": null,
+          "comentarios": null,
+          "shares": null,
+          "ctr_miniaturas": null,
+          "retencion_promedio": null,
+          "shorts_vistas": null
+        },
+        "tiktok": {
+          "seguidores_total": null,
+          "seguidores_nuevos": null,
+          "vistas_perfil": null,
+          "reproducciones": null,
+          "engagement_total": null,
+          "engagement_rate": null,
+          "likes": null,
+          "comentarios": null,
+          "shares": null,
+          "retencion_promedio": null
+        }
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Semana sin datos. Pendiente de primera carga de métricas.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
+    }
+  ],
+  "contenidos": []
+}
