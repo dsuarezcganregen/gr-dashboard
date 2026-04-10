@@ -3,77 +3,125 @@
     "proyecto": "Ganadería Regenerativa",
     "web": "GanaderiaRegenerativa.com",
     "ultima_actualizacion": "2026-04-10",
-    "version": "1.0"
+    "version": "1.1"
   },
   "semanas": [
     {
-      "id": "2026-W14",
-      "fecha_inicio": "2026-03-30",
-      "fecha_fin": "2026-04-05",
+      "id": "2026-W03", "fecha_inicio": "2026-01-12", "fecha_fin": "2026-01-18",
       "plataformas": {
-        "instagram": {
-          "seguidores_total": null,
-          "seguidores_nuevos": null,
-          "seguidores_perdidos": null,
-          "alcance": null,
-          "impresiones": null,
-          "engagement_total": null,
-          "engagement_rate": null,
-          "likes": null,
-          "comentarios": null,
-          "shares": null,
-          "saves": null,
-          "clics_enlace": null,
-          "clics_perfil": null,
-          "stories_alcance": null,
-          "reels_reproducciones": null,
-          "reels_retencion_promedio": null
-        },
-        "facebook": {
-          "seguidores_total": null,
-          "alcance": null,
-          "impresiones": null,
-          "engagement_total": null,
-          "engagement_rate": null,
-          "likes": null,
-          "comentarios": null,
-          "shares": null,
-          "clics_enlace": null,
-          "video_reproducciones": null,
-          "video_retencion_promedio": null
-        },
-        "youtube": {
-          "suscriptores_total": null,
-          "suscriptores_nuevos": null,
-          "vistas": null,
-          "watch_time_horas": null,
-          "engagement_total": null,
-          "likes": null,
-          "comentarios": null,
-          "shares": null,
-          "ctr_miniaturas": null,
-          "retencion_promedio": null,
-          "shorts_vistas": null
-        },
-        "tiktok": {
-          "seguidores_total": null,
-          "seguidores_nuevos": null,
-          "vistas_perfil": null,
-          "reproducciones": null,
-          "engagement_total": null,
-          "engagement_rate": null,
-          "likes": null,
-          "comentarios": null,
-          "shares": null,
-          "retencion_promedio": null
-        }
+        "instagram": {}, "youtube": {}, "tiktok": {},
+        "facebook": { "seguidores_total": null, "alcance": 82370, "engagement_total": 1978, "engagement_rate": 2.40, "video_reproducciones": 113524 }
+      },
+      "top_contenidos": [{ "titulo": "Ella sabe más: la vaca convierte plantas en carne", "plataforma": "facebook", "formato": "video", "categoria": "educativo", "alcance": 18023, "engagement_rate": 3.37, "saves": null, "retencion": 33 }],
+      "diagnostico": { "resumen": "Semana fuerte de arranque. 82K alcance, ER 2.40%. Video educativo 'Ella sabe más' lideró con 18K alcance.", "hallazgos": [{ "texto": "La foto 'la solución no está en la jeringa' logró 36.5K alcance y 4,681 clics, récord trimestral de clics.", "tipo": "positivo" }], "acciones_recomendadas": ["Replicar formato de fotos polémicas con texto corto.", "Mantener 7 posts/semana como línea base."] }
+    },
+    {
+      "id": "2026-W04", "fecha_inicio": "2026-01-19", "fecha_fin": "2026-01-25",
+      "plataformas": {
+        "instagram": {}, "youtube": {}, "tiktok": {},
+        "facebook": { "seguidores_total": null, "alcance": 68763, "engagement_total": 2363, "engagement_rate": 3.44, "video_reproducciones": 78681 }
       },
       "top_contenidos": [],
-      "diagnostico": {
-        "resumen": "Semana sin datos. Pendiente de primera carga de métricas.",
-        "hallazgos": [],
-        "acciones_recomendadas": []
-      }
+      "diagnostico": { "resumen": "ER subió a 3.44% pese a menor alcance. Contenido más enfocado genera mejor interacción.", "hallazgos": [{ "texto": "ER subió de 2.40% a 3.44%. Mejor profundidad de engagement.", "tipo": "positivo" }], "acciones_recomendadas": ["Equilibrar alcance con profundidad de engagement."] }
+    },
+    {
+      "id": "2026-W05", "fecha_inicio": "2026-01-26", "fecha_fin": "2026-02-01",
+      "plataformas": {
+        "instagram": {}, "youtube": {}, "tiktok": {},
+        "facebook": { "seguidores_total": null, "alcance": 117251, "engagement_total": 2489, "engagement_rate": 2.12, "video_reproducciones": 175602 }
+      },
+      "top_contenidos": [{ "titulo": "Nitrógeno sintético se come tu cartera", "plataforma": "facebook", "formato": "foto", "categoria": "polemico", "alcance": 65833, "engagement_rate": 1.35, "saves": null, "retencion": null }],
+      "diagnostico": { "resumen": "Mejor semana en alcance (117K). Post viral 'nitrógeno sintético' con 65.8K alcance y 188 shares.", "hallazgos": [{ "texto": "Foto polémica sobre nitrógeno logró 188 shares, máximo del trimestre.", "tipo": "positivo" }, { "texto": "ER bajó a 2.12% por dispersión del alcance viral.", "tipo": "neutro" }], "acciones_recomendadas": ["Publicar contenido de profundidad después de cada viral para retener nuevos seguidores.", "Capitalizar audiencia nueva con seguimiento educativo."] }
+    },
+    {
+      "id": "2026-W06", "fecha_inicio": "2026-02-02", "fecha_fin": "2026-02-08",
+      "plataformas": {
+        "instagram": {}, "youtube": {}, "tiktok": {},
+        "facebook": { "seguidores_total": null, "alcance": 35222, "engagement_total": 1069, "engagement_rate": 3.04, "video_reproducciones": 43639 }
+      },
+      "top_contenidos": [],
+      "diagnostico": { "resumen": "Corrección natural post-viral. Alcance bajó a 35K pero ER se recuperó a 3.04%.", "hallazgos": [{ "texto": "Corrección normal después de semana viral. Base de seguidores sigue comprometida.", "tipo": "neutro" }], "acciones_recomendadas": ["Mantener consistencia. Las semanas post-viral no deben generar alarma."] }
+    },
+    {
+      "id": "2026-W07", "fecha_inicio": "2026-02-09", "fecha_fin": "2026-02-15",
+      "plataformas": {
+        "instagram": {}, "youtube": {}, "tiktok": {},
+        "facebook": { "seguidores_total": null, "alcance": 21141, "engagement_total": 1266, "engagement_rate": 5.99, "video_reproducciones": 24931 }
+      },
+      "top_contenidos": [],
+      "diagnostico": { "resumen": "Mejor ER del trimestre: 5.99%. Alcance bajo (21K) pero engagement excepcional. Semana de comunidad pura.", "hallazgos": [{ "texto": "5.99% ER significa que casi 6 de cada 100 personas interactuaron. Contenido altamente relevante para la audiencia fiel.", "tipo": "positivo" }], "acciones_recomendadas": ["Analizar temas de esta semana para replicar."] }
+    },
+    {
+      "id": "2026-W08", "fecha_inicio": "2026-02-16", "fecha_fin": "2026-02-22",
+      "plataformas": {
+        "instagram": {}, "youtube": {}, "tiktok": {},
+        "facebook": { "seguidores_total": null, "alcance": 125633, "engagement_total": 3396, "engagement_rate": 2.70, "video_reproducciones": 176025 }
+      },
+      "top_contenidos": [{ "titulo": "¿Heredaste el mando o invertiste?", "plataforma": "facebook", "formato": "foto", "categoria": "polemico", "alcance": 53753, "engagement_rate": 1.73, "saves": null, "retencion": null }, { "titulo": "La ganadería nos está matando, ok pero...", "plataforma": "facebook", "formato": "video", "categoria": "polemico", "alcance": 45214, "engagement_rate": 3.42, "saves": null, "retencion": 32 }],
+      "diagnostico": { "resumen": "Segunda mejor semana en alcance (125K) y mejor en engagement total (3,396). Dos virales simultáneos.", "hallazgos": [{ "texto": "Post '¿heredaste o invertiste?' generó 306 comentarios, récord del trimestre. Toca fibra personal.", "tipo": "positivo" }, { "texto": "'Ganadería nos está matando' logró 3.42% ER y 172 shares. Defender el sector genera solidaridad.", "tipo": "positivo" }], "acciones_recomendadas": ["Crear serie mensual de desmitificación con datos técnicos.", "Explotar más el ángulo de identidad personal del ganadero."] }
+    },
+    {
+      "id": "2026-W09", "fecha_inicio": "2026-02-23", "fecha_fin": "2026-03-01",
+      "plataformas": {
+        "instagram": {}, "youtube": {}, "tiktok": {},
+        "facebook": { "seguidores_total": null, "alcance": 44741, "engagement_total": 1909, "engagement_rate": 4.27, "video_reproducciones": 51247 }
+      },
+      "top_contenidos": [],
+      "diagnostico": { "resumen": "ER de 4.27%. Buen balance alcance/profundidad.", "hallazgos": [{ "texto": "ER consistentemente arriba de 4%. Audiencia cada vez más comprometida.", "tipo": "positivo" }], "acciones_recomendadas": ["Continuar con mezcla de contenido actual."] }
+    },
+    {
+      "id": "2026-W10", "fecha_inicio": "2026-03-02", "fecha_fin": "2026-03-08",
+      "plataformas": {
+        "instagram": {}, "youtube": {}, "tiktok": {},
+        "facebook": { "seguidores_total": null, "alcance": 51170, "engagement_total": 1797, "engagement_rate": 3.51, "video_reproducciones": 60323 }
+      },
+      "top_contenidos": [],
+      "diagnostico": { "resumen": "Semana consistente. ER 3.51%, alcance estable en 51K.", "hallazgos": [{ "texto": "Estabilidad indica madurez de la estrategia.", "tipo": "positivo" }], "acciones_recomendadas": ["Preparar siguiente pieza polémica para impulsar alcance."] }
+    },
+    {
+      "id": "2026-W11", "fecha_inicio": "2026-03-09", "fecha_fin": "2026-03-15",
+      "plataformas": {
+        "instagram": {}, "youtube": {}, "tiktok": {},
+        "facebook": { "seguidores_total": null, "alcance": 115414, "engagement_total": 2760, "engagement_rate": 2.39, "video_reproducciones": 122060 }
+      },
+      "top_contenidos": [{ "titulo": "Biomasa acomodada, no pasto tirado", "plataforma": "facebook", "formato": "video", "categoria": "educativo", "alcance": 66784, "engagement_rate": 1.86, "saves": null, "retencion": 32 }],
+      "diagnostico": { "resumen": "Tercer pico viral (115K alcance). Se confirma ciclo viral cada 3 semanas (W05→W08→W11).", "hallazgos": [{ "texto": "Ciclo viral de 3 semanas confirmado. Los picos coinciden con contenido polémico o educativo con gancho fuerte.", "tipo": "positivo" }, { "texto": "Retención del video top (31.6%) sigue debajo del 50%. El alcance viene del tema, no de la retención.", "tipo": "negativo" }], "acciones_recomendadas": ["Programar contenido disruptivo cada 3 semanas para mantener el ciclo.", "Trabajar en los primeros 10 segundos del video para mejorar retención."] }
+    },
+    {
+      "id": "2026-W12", "fecha_inicio": "2026-03-16", "fecha_fin": "2026-03-22",
+      "plataformas": {
+        "instagram": {}, "youtube": {}, "tiktok": {},
+        "facebook": { "seguidores_total": null, "alcance": 73440, "engagement_total": 2961, "engagement_rate": 4.03, "video_reproducciones": 83321 }
+      },
+      "top_contenidos": [],
+      "diagnostico": { "resumen": "Semana ideal: 4.03% ER con 73K alcance. Equilibrio perfecto entre distribución y profundidad.", "hallazgos": [{ "texto": "Esta combinación (ER >4% + Alcance >70K) es el estándar a mantener de forma consistente.", "tipo": "positivo" }], "acciones_recomendadas": ["Analizar la mezcla de contenido de esta semana como modelo a replicar."] }
+    },
+    {
+      "id": "2026-W13", "fecha_inicio": "2026-03-23", "fecha_fin": "2026-03-29",
+      "plataformas": {
+        "instagram": {}, "youtube": {}, "tiktok": {},
+        "facebook": { "seguidores_total": null, "alcance": 39655, "engagement_total": 1280, "engagement_rate": 3.23, "video_reproducciones": 52642 }
+      },
+      "top_contenidos": [],
+      "diagnostico": { "resumen": "Semana normal post-pico. ER 3.23% se mantiene saludable.", "hallazgos": [{ "texto": "Corrección natural. Base sólida.", "tipo": "neutro" }], "acciones_recomendadas": ["Preparar contenido viral para W14/W15 según ciclo de 3 semanas."] }
+    },
+    {
+      "id": "2026-W14", "fecha_inicio": "2026-03-30", "fecha_fin": "2026-04-05",
+      "plataformas": {
+        "instagram": {}, "youtube": {}, "tiktok": {},
+        "facebook": { "seguidores_total": null, "alcance": 46150, "engagement_total": 1494, "engagement_rate": 3.24, "video_reproducciones": 49108 }
+      },
+      "top_contenidos": [{ "titulo": "Johan Zietsman: si hay vida se puede regenerar", "plataforma": "facebook", "formato": "video", "categoria": "testimonial", "alcance": 9690, "engagement_rate": 2.68, "saves": null, "retencion": 18 }],
+      "diagnostico": { "resumen": "Semana estable. El post promocional del programa 1:1 tuvo 20 clics en enlace, de los pocos que generó tráfico.", "hallazgos": [{ "texto": "Testimonial de Johan Zietsman tuvo buena respuesta pero retención baja (18%) por duración de 160 seg.", "tipo": "neutro" }, { "texto": "Post promocional generó 20 de los 22 clics en enlace del trimestre. CTA directo funciona.", "tipo": "positivo" }], "acciones_recomendadas": ["Recortar testimoniales a 60 seg máximo para Facebook.", "Incluir enlace directo en todo post promocional."] }
+    },
+    {
+      "id": "2026-W15", "fecha_inicio": "2026-04-06", "fecha_fin": "2026-04-10",
+      "plataformas": {
+        "instagram": {}, "youtube": {}, "tiktok": {},
+        "facebook": { "seguidores_total": null, "alcance": 21363, "engagement_total": 591, "engagement_rate": 2.77, "video_reproducciones": 25815 }
+      },
+      "top_contenidos": [],
+      "diagnostico": { "resumen": "Semana parcial (4 posts al 10 abril). ER 2.77% dentro del rango saludable.", "hallazgos": [{ "texto": "Datos parciales consistentes con promedio trimestral.", "tipo": "neutro" }], "acciones_recomendadas": ["Completar semana con 3 posts adicionales.", "Incluir 1 foto polémica con CTA a web."] }
     }
   ],
   "contenidos": []
