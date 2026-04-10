@@ -173,7 +173,7 @@ body {
 /* === OVERVIEW STRIP === */
 .overview-strip {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 12px;
   margin-bottom: 24px;
 }
@@ -794,10 +794,31 @@ function renderWeek() {
   updatePeriodLabel();
 }
 
+function getYouTubeTriData() {
+  const yt = dashboardData.youtube_trimestral;
+  if (!yt) return null;
+  return {
+    suscriptores_total: null,
+    suscriptores_nuevos: yt.suscriptores_nuevos,
+    vistas: yt.vistas,
+    watch_time_horas: yt.watch_time_horas,
+    ctr_miniaturas: yt.ctr_impresiones,
+    retencion_promedio: yt.pct_reproducido,
+    impresiones: yt.impresiones,
+    duracion_promedio: yt.duracion_promedio_vista_min
+  };
+}
+
+function platformHasData(data) {
+  if (!data || typeof data !== 'object') return false;
+  return Object.values(data).some(v => v != null);
+}
+
 function renderPlatformCards(week, prevWeek) {
   const platforms = [
     { key: 'instagram', name: 'Instagram', icon: '📷', css: 'instagram',
-      mainMetric: 'seguidores_total', mainLabel: 'Seguidores',
+      mainMetric: 'seguidores_total', fallbackMetric: 'seguidores_nuevos',
+      mainLabel: 'Seguidores', fallbackLabel: 'Nuevos Seguidores',
       rows: [
         { label: 'Alcance', key: 'alcance' },
         { label: 'Engagement Rate', key: 'engagement_rate', isPct: true },
@@ -806,7 +827,8 @@ function renderPlatformCards(week, prevWeek) {
       ]
     },
     { key: 'facebook', name: 'Facebook', icon: '📘', css: 'facebook',
-      mainMetric: 'seguidores_total', mainLabel: 'Seguidores',
+      mainMetric: 'seguidores_total', fallbackMetric: 'alcance',
+      mainLabel: 'Seguidores', fallbackLabel: 'Alcance',
       rows: [
         { label: 'Alcance', key: 'alcance' },
         { label: 'Engagement Rate', key: 'engagement_rate', isPct: true },
@@ -815,7 +837,9 @@ function renderPlatformCards(week, prevWeek) {
       ]
     },
     { key: 'youtube', name: 'YouTube', icon: '📺', css: 'youtube',
-      mainMetric: 'suscriptores_total', mainLabel: 'Suscriptores',
+      mainMetric: 'suscriptores_total', fallbackMetric: 'suscriptores_nuevos',
+      mainLabel: 'Suscriptores', fallbackLabel: 'Nuevos Suscriptores',
+      useTriData: true,
       rows: [
         { label: 'Vistas', key: 'vistas' },
         { label: 'Watch Time (hrs)', key: 'watch_time_horas' },
@@ -824,7 +848,8 @@ function renderPlatformCards(week, prevWeek) {
       ]
     },
     { key: 'tiktok', name: 'TikTok', icon: '🎵', css: 'tiktok',
-      mainMetric: 'seguidores_total', mainLabel: 'Seguidores',
+      mainMetric: 'seguidores_total', fallbackMetric: 'reproducciones',
+      mainLabel: 'Seguidores', fallbackLabel: 'Reproducciones',
       rows: [
         { label: 'Reproducciones', key: 'reproducciones' },
         { label: 'Engagement Rate', key: 'engagement_rate', isPct: true },
@@ -838,22 +863,49 @@ function renderPlatformCards(week, prevWeek) {
   container.innerHTML = '';
 
   platforms.forEach(p => {
-    const data = week.plataformas[p.key];
+    let data = week.plataformas[p.key];
+
+    // Si YouTube no tiene datos semanales, usar datos trimestrales
+    if (p.useTriData && !platformHasData(data)) {
+      data = getYouTubeTriData();
+    }
+
+    // Ocultar plataformas sin datos (ej. TikTok)
+    if (!platformHasData(data)) return;
+
     const prevData = prevWeek ? prevWeek.plataformas[p.key] : null;
-    const mainVal = data ? data[p.mainMetric] : null;
-    const prevMainVal = prevData ? prevData[p.mainMetric] : null;
+
+    // Usar fallback si mainMetric es null
+    let mainVal = data ? data[p.mainMetric] : null;
+    let mainLabel = p.mainLabel;
+    if (mainVal == null && p.fallbackMetric && data) {
+      mainVal = data[p.fallbackMetric];
+      mainLabel = p.fallbackLabel;
+    }
+
+    let prevMainVal = prevData ? prevData[p.mainMetric] : null;
+    if (prevMainVal == null && p.fallbackMetric && prevData) {
+      prevMainVal = prevData[p.fallbackMetric];
+    }
     const change = getChange(mainVal, prevMainVal);
 
     let rowsHtml = '';
     if (data) {
       p.rows.forEach(r => {
         const val = data[r.key];
+        // Ocultar filas con valor null
+        if (val == null) return;
         rowsHtml += `<div class="metric-row">
           <span class="metric-row-label">${r.label}</span>
           <span class="metric-row-value">${r.isPct ? fmtPct(val) : fmt(val)}</span>
         </div>`;
       });
     }
+
+    // Etiqueta especial para YouTube con datos trimestrales
+    const ytTriNote = (p.useTriData && !platformHasData(week.plataformas[p.key]) && dashboardData.youtube_trimestral)
+      ? `<div style="font-size:11px;color:var(--text-dim);margin-top:8px;font-style:italic;">Datos acumulados Q1 2026</div>`
+      : '';
 
     container.innerHTML += `
       <div class="platform-card ${p.css}">
@@ -862,8 +914,9 @@ function renderPlatformCards(week, prevWeek) {
           <span class="platform-icon">${p.icon}</span>
         </div>
         <div class="metric-big">${fmt(mainVal)}</div>
-        <div class="metric-label">${p.mainLabel} <span class="${change.cls}" style="font-family:var(--mono);margin-left:6px;">${change.text}</span></div>
+        <div class="metric-label">${mainLabel} <span class="${change.cls}" style="font-family:var(--mono);margin-left:6px;">${change.text}</span></div>
         ${rowsHtml}
+        ${ytTriNote}
       </div>`;
   });
 }
