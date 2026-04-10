@@ -6,7 +6,13 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(gh api:*)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(gh repo:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(python -c \"import json; json.load\\(open\\('dashboard-data.json'\\)\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('dashboard-data.json','utf8'\\)\\); console.log\\('JSON válido'\\)\")",
+      "Bash(node -e \"const d=new Date\\(\\);const jan1=new Date\\(d.getFullYear\\(\\),0,1\\);const w=Math.ceil\\(\\(\\(d-jan1\\)/86400000+jan1.getDay\\(\\)+1\\)/7\\);console.log\\(d.getFullYear\\(\\)+'-W'+String\\(w\\).padStart\\(2,'0'\\)\\)\")"
     ]
   }
 }
