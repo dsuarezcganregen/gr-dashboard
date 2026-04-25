@@ -2,234 +2,1208 @@
   "meta": {
     "proyecto": "Ganadería Regenerativa",
     "web": "GanaderiaRegenerativa.com",
-    "ultima_actualizacion": "2026-04-10",
-    "version": "3.0",
-    "nota": "Datos Q4 2025 + Q1 2026. Facebook, Instagram y YouTube."
+    "ultima_actualizacion": "2026-04-25",
+    "version": "2.1",
+    "nota": "Datos de Facebook, Instagram y YouTube. Actualización al 24 abril 2026."
   },
   "semanas": [
     {
-      "id": "2025-W40", "fecha_inicio": "2025-09-29", "fecha_fin": "2025-10-05",
+      "id": "2025-W40",
+      "fecha_inicio": "2025-09-29",
+      "fecha_fin": "2025-10-05",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 335, "alcance": 26092, "engagement_total": 2526, "engagement_rate": 9.68, "saves": 187 },
-        "facebook": { "alcance": 152973, "engagement_total": 5727, "engagement_rate": 3.74, "video_reproducciones": 185346 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Arranque de Q4. FB con 153K alcance, IG con 9.68% ER. Base solida.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 335,
+          "alcance": 26092,
+          "engagement_total": 2526,
+          "engagement_rate": 9.68,
+          "saves": 187
+        },
+        "facebook": {
+          "alcance": 152973,
+          "engagement_total": 5727,
+          "engagement_rate": 3.74,
+          "video_reproducciones": 185346
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Arranque de Q4. FB con 153K alcance, IG con 9.68% ER. Base solida.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2025-W41", "fecha_inicio": "2025-10-06", "fecha_fin": "2025-10-12",
+      "id": "2025-W41",
+      "fecha_inicio": "2025-10-06",
+      "fecha_fin": "2025-10-12",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 55, "alcance": 16664, "engagement_total": 1303, "engagement_rate": 7.82, "saves": 80 },
-        "facebook": { "alcance": 46390, "engagement_total": 2062, "engagement_rate": 4.44, "video_reproducciones": 54789 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Semana moderada. IG 7.82% ER, FB 4.44% ER.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 55,
+          "alcance": 16664,
+          "engagement_total": 1303,
+          "engagement_rate": 7.82,
+          "saves": 80
+        },
+        "facebook": {
+          "alcance": 46390,
+          "engagement_total": 2062,
+          "engagement_rate": 4.44,
+          "video_reproducciones": 54789
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Semana moderada. IG 7.82% ER, FB 4.44% ER.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2025-W42", "fecha_inicio": "2025-10-13", "fecha_fin": "2025-10-19",
+      "id": "2025-W42",
+      "fecha_inicio": "2025-10-13",
+      "fecha_fin": "2025-10-19",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 224, "alcance": 29311, "engagement_total": 2527, "engagement_rate": 8.62, "saves": 212 },
-        "facebook": { "alcance": 173591, "engagement_total": 6428, "engagement_rate": 3.70, "video_reproducciones": 202839 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "FB fuerte con 173K alcance. IG estable en 8.62% ER.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 224,
+          "alcance": 29311,
+          "engagement_total": 2527,
+          "engagement_rate": 8.62,
+          "saves": 212
+        },
+        "facebook": {
+          "alcance": 173591,
+          "engagement_total": 6428,
+          "engagement_rate": 3.7,
+          "video_reproducciones": 202839
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "FB fuerte con 173K alcance. IG estable en 8.62% ER.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2025-W43", "fecha_inicio": "2025-10-20", "fecha_fin": "2025-10-26",
+      "id": "2025-W43",
+      "fecha_inicio": "2025-10-20",
+      "fecha_fin": "2025-10-26",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 2327, "alcance": 171983, "engagement_total": 17521, "engagement_rate": 10.19, "saves": 2159 },
-        "facebook": { "alcance": 504746, "engagement_total": 20543, "engagement_rate": 4.07, "video_reproducciones": 609587 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Semana explosiva. IG: 172K alcance, 10.19% ER, 2,327 follows, 2,159 saves. FB: 505K alcance, 20.5K engagement. Pico maximo de Q4.", "hallazgos": [{"texto": "Semana record en ambas plataformas. Contenido viral masivo.", "tipo": "positivo"}], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 2327,
+          "alcance": 171983,
+          "engagement_total": 17521,
+          "engagement_rate": 10.19,
+          "saves": 2159
+        },
+        "facebook": {
+          "alcance": 504746,
+          "engagement_total": 20543,
+          "engagement_rate": 4.07,
+          "video_reproducciones": 609587
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Semana explosiva. IG: 172K alcance, 10.19% ER, 2,327 follows, 2,159 saves. FB: 505K alcance, 20.5K engagement. Pico maximo de Q4.",
+        "hallazgos": [
+          {
+            "texto": "Semana record en ambas plataformas. Contenido viral masivo.",
+            "tipo": "positivo"
+          }
+        ],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2025-W44", "fecha_inicio": "2025-10-27", "fecha_fin": "2025-11-02",
+      "id": "2025-W44",
+      "fecha_inicio": "2025-10-27",
+      "fecha_fin": "2025-11-02",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 301, "alcance": 39940, "engagement_total": 3463, "engagement_rate": 8.67, "saves": 410 },
-        "facebook": { "alcance": 58814, "engagement_total": 1406, "engagement_rate": 2.39, "video_reproducciones": 82361 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Correccion post-viral. IG mantiene 8.67% ER. FB bajo a 2.39%.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 301,
+          "alcance": 39940,
+          "engagement_total": 3463,
+          "engagement_rate": 8.67,
+          "saves": 410
+        },
+        "facebook": {
+          "alcance": 58814,
+          "engagement_total": 1406,
+          "engagement_rate": 2.39,
+          "video_reproducciones": 82361
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Correccion post-viral. IG mantiene 8.67% ER. FB bajo a 2.39%.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2025-W45", "fecha_inicio": "2025-11-03", "fecha_fin": "2025-11-09",
+      "id": "2025-W45",
+      "fecha_inicio": "2025-11-03",
+      "fecha_fin": "2025-11-09",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 101, "alcance": 25765, "engagement_total": 1859, "engagement_rate": 7.22, "saves": 231 },
-        "facebook": { "alcance": 48709, "engagement_total": 1415, "engagement_rate": 2.91, "video_reproducciones": 63847 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Semana estable. IG 7.22% ER, FB 2.91% ER.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 101,
+          "alcance": 25765,
+          "engagement_total": 1859,
+          "engagement_rate": 7.22,
+          "saves": 231
+        },
+        "facebook": {
+          "alcance": 48709,
+          "engagement_total": 1415,
+          "engagement_rate": 2.91,
+          "video_reproducciones": 63847
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Semana estable. IG 7.22% ER, FB 2.91% ER.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2025-W46", "fecha_inicio": "2025-11-10", "fecha_fin": "2025-11-16",
+      "id": "2025-W46",
+      "fecha_inicio": "2025-11-10",
+      "fecha_fin": "2025-11-16",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 72, "alcance": 24602, "engagement_total": 2007, "engagement_rate": 8.16, "saves": 200 },
-        "facebook": { "alcance": 93716, "engagement_total": 2709, "engagement_rate": 2.89, "video_reproducciones": 101052 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "IG 8.16% ER. FB sube a 93K alcance.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 72,
+          "alcance": 24602,
+          "engagement_total": 2007,
+          "engagement_rate": 8.16,
+          "saves": 200
+        },
+        "facebook": {
+          "alcance": 93716,
+          "engagement_total": 2709,
+          "engagement_rate": 2.89,
+          "video_reproducciones": 101052
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "IG 8.16% ER. FB sube a 93K alcance.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2025-W47", "fecha_inicio": "2025-11-17", "fecha_fin": "2025-11-23",
+      "id": "2025-W47",
+      "fecha_inicio": "2025-11-17",
+      "fecha_fin": "2025-11-23",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 77, "alcance": 21585, "engagement_total": 1681, "engagement_rate": 7.79, "saves": 165 },
-        "facebook": { "alcance": 95627, "engagement_total": 3189, "engagement_rate": 3.33, "video_reproducciones": 105036 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "FB estable con 95K alcance. IG 7.79% ER.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 77,
+          "alcance": 21585,
+          "engagement_total": 1681,
+          "engagement_rate": 7.79,
+          "saves": 165
+        },
+        "facebook": {
+          "alcance": 95627,
+          "engagement_total": 3189,
+          "engagement_rate": 3.33,
+          "video_reproducciones": 105036
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "FB estable con 95K alcance. IG 7.79% ER.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2025-W48", "fecha_inicio": "2025-11-24", "fecha_fin": "2025-11-30",
+      "id": "2025-W48",
+      "fecha_inicio": "2025-11-24",
+      "fecha_fin": "2025-11-30",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 18, "alcance": 13570, "engagement_total": 883, "engagement_rate": 6.51, "saves": 77 },
-        "facebook": { "alcance": 31299, "engagement_total": 991, "engagement_rate": 3.17, "video_reproducciones": 34128 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Semana baja en ambas plataformas. IG 6.51% ER, FB 3.17%.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 18,
+          "alcance": 13570,
+          "engagement_total": 883,
+          "engagement_rate": 6.51,
+          "saves": 77
+        },
+        "facebook": {
+          "alcance": 31299,
+          "engagement_total": 991,
+          "engagement_rate": 3.17,
+          "video_reproducciones": 34128
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Semana baja en ambas plataformas. IG 6.51% ER, FB 3.17%.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2025-W49", "fecha_inicio": "2025-12-01", "fecha_fin": "2025-12-07",
+      "id": "2025-W49",
+      "fecha_inicio": "2025-12-01",
+      "fecha_fin": "2025-12-07",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 67, "alcance": 23906, "engagement_total": 1535, "engagement_rate": 6.42, "saves": 160 },
-        "facebook": { "alcance": 52764, "engagement_total": 1484, "engagement_rate": 2.81, "video_reproducciones": 56137 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Inicio de diciembre moderado. IG 6.42%, FB 2.81%.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 67,
+          "alcance": 23906,
+          "engagement_total": 1535,
+          "engagement_rate": 6.42,
+          "saves": 160
+        },
+        "facebook": {
+          "alcance": 52764,
+          "engagement_total": 1484,
+          "engagement_rate": 2.81,
+          "video_reproducciones": 56137
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Inicio de diciembre moderado. IG 6.42%, FB 2.81%.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2025-W50", "fecha_inicio": "2025-12-08", "fecha_fin": "2025-12-14",
+      "id": "2025-W50",
+      "fecha_inicio": "2025-12-08",
+      "fecha_fin": "2025-12-14",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 96, "alcance": 25226, "engagement_total": 2111, "engagement_rate": 8.37, "saves": 162 },
-        "facebook": { "alcance": 49165, "engagement_total": 1814, "engagement_rate": 3.69, "video_reproducciones": 55179 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "IG recupera a 8.37% ER. FB estable.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 96,
+          "alcance": 25226,
+          "engagement_total": 2111,
+          "engagement_rate": 8.37,
+          "saves": 162
+        },
+        "facebook": {
+          "alcance": 49165,
+          "engagement_total": 1814,
+          "engagement_rate": 3.69,
+          "video_reproducciones": 55179
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "IG recupera a 8.37% ER. FB estable.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2025-W51", "fecha_inicio": "2025-12-15", "fecha_fin": "2025-12-21",
+      "id": "2025-W51",
+      "fecha_inicio": "2025-12-15",
+      "fecha_fin": "2025-12-21",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 342, "alcance": 61262, "engagement_total": 5050, "engagement_rate": 8.24, "saves": 942 },
-        "facebook": { "alcance": 134466, "engagement_total": 3397, "engagement_rate": 2.53, "video_reproducciones": 165771 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "IG fuerte: 61K alcance, 942 saves, 342 follows. FB sube a 134K alcance.", "hallazgos": [{"texto": "Pre-cierre de ano con contenido fuerte en ambas plataformas.", "tipo": "positivo"}], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 342,
+          "alcance": 61262,
+          "engagement_total": 5050,
+          "engagement_rate": 8.24,
+          "saves": 942
+        },
+        "facebook": {
+          "alcance": 134466,
+          "engagement_total": 3397,
+          "engagement_rate": 2.53,
+          "video_reproducciones": 165771
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "IG fuerte: 61K alcance, 942 saves, 342 follows. FB sube a 134K alcance.",
+        "hallazgos": [
+          {
+            "texto": "Pre-cierre de ano con contenido fuerte en ambas plataformas.",
+            "tipo": "positivo"
+          }
+        ],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2025-W52", "fecha_inicio": "2025-12-22", "fecha_fin": "2025-12-28",
+      "id": "2025-W52",
+      "fecha_inicio": "2025-12-22",
+      "fecha_fin": "2025-12-28",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 1176, "alcance": 117356, "engagement_total": 11340, "engagement_rate": 9.66, "saves": 1405 },
-        "facebook": { "alcance": 609797, "engagement_total": 55227, "engagement_rate": 9.06, "video_reproducciones": 1162718 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Semana record absoluto. FB: 610K alcance, 9.06% ER, 55K engagement, 1.16M views. IG: 117K alcance, 9.66% ER, 1,176 follows, 1,405 saves. Cierre de ano explosivo.", "hallazgos": [{"texto": "El pico de fin de ano fue el mas alto de todo el semestre. FB alcanzo 610K en una sola semana con 9.06% ER.", "tipo": "positivo"}, {"texto": "Este pico inflaciona los promedios de Q4 y hace que Q1 parezca peor de lo que realmente es.", "tipo": "neutro"}], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 1176,
+          "alcance": 117356,
+          "engagement_total": 11340,
+          "engagement_rate": 9.66,
+          "saves": 1405
+        },
+        "facebook": {
+          "alcance": 609797,
+          "engagement_total": 55227,
+          "engagement_rate": 9.06,
+          "video_reproducciones": 1162718
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Semana record absoluto. FB: 610K alcance, 9.06% ER, 55K engagement, 1.16M views. IG: 117K alcance, 9.66% ER, 1,176 follows, 1,405 saves. Cierre de ano explosivo.",
+        "hallazgos": [
+          {
+            "texto": "El pico de fin de ano fue el mas alto de todo el semestre. FB alcanzo 610K en una sola semana con 9.06% ER.",
+            "tipo": "positivo"
+          },
+          {
+            "texto": "Este pico inflaciona los promedios de Q4 y hace que Q1 parezca peor de lo que realmente es.",
+            "tipo": "neutro"
+          }
+        ],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W01", "fecha_inicio": "2025-12-29", "fecha_fin": "2026-01-04",
+      "id": "2026-W01",
+      "fecha_inicio": "2025-12-29",
+      "fecha_fin": "2026-01-04",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 909, "alcance": 81925, "engagement_total": 4369, "engagement_rate": 5.33, "saves": 754 },
-        "facebook": { "alcance": 83719, "engagement_total": 3209, "engagement_rate": 3.83, "video_reproducciones": 96153 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Transicion Q4-Q1. IG aun con inercia del viral de W52 (82K alcance, 909 follows). FB normalizado a 84K.", "hallazgos": [{"texto": "La inercia del pico de fin de ano se extiende a la primera semana de enero.", "tipo": "neutro"}], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 909,
+          "alcance": 81925,
+          "engagement_total": 4369,
+          "engagement_rate": 5.33,
+          "saves": 754
+        },
+        "facebook": {
+          "alcance": 83719,
+          "engagement_total": 3209,
+          "engagement_rate": 3.83,
+          "video_reproducciones": 96153
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Transicion Q4-Q1. IG aun con inercia del viral de W52 (82K alcance, 909 follows). FB normalizado a 84K.",
+        "hallazgos": [
+          {
+            "texto": "La inercia del pico de fin de ano se extiende a la primera semana de enero.",
+            "tipo": "neutro"
+          }
+        ],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W02", "fecha_inicio": "2026-01-05", "fecha_fin": "2026-01-11",
+      "id": "2026-W02",
+      "fecha_inicio": "2026-01-05",
+      "fecha_fin": "2026-01-11",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 17, "alcance": 16066, "engagement_total": 1065, "engagement_rate": 6.63, "saves": 114 },
-        "facebook": { "alcance": 3527, "engagement_total": 78, "engagement_rate": 2.21, "video_reproducciones": 6243 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Primera semana real de Q1. Caida fuerte vs W52 (esperada). IG 6.63% ER, FB solo 3.5K alcance.", "hallazgos": [{"texto": "La caida post-pico de fin de ano era inevitable. Los numeros de esta semana representan el nuevo nivel base de Q1.", "tipo": "neutro"}], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 17,
+          "alcance": 16066,
+          "engagement_total": 1065,
+          "engagement_rate": 6.63,
+          "saves": 114
+        },
+        "facebook": {
+          "alcance": 3527,
+          "engagement_total": 78,
+          "engagement_rate": 2.21,
+          "video_reproducciones": 6243
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Primera semana real de Q1. Caida fuerte vs W52 (esperada). IG 6.63% ER, FB solo 3.5K alcance.",
+        "hallazgos": [
+          {
+            "texto": "La caida post-pico de fin de ano era inevitable. Los numeros de esta semana representan el nuevo nivel base de Q1.",
+            "tipo": "neutro"
+          }
+        ],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W03", "fecha_inicio": "2026-01-12", "fecha_fin": "2026-01-18",
+      "id": "2026-W03",
+      "fecha_inicio": "2026-01-12",
+      "fecha_fin": "2026-01-18",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 361, "alcance": 66540, "engagement_total": 3009, "engagement_rate": 4.52, "saves": 378 },
-        "facebook": { "alcance": 82370, "engagement_total": 1978, "engagement_rate": 2.40, "video_reproducciones": 113524 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [{"titulo": "La solucion no esta en la jeringa", "plataforma": "instagram", "formato": "carrusel", "categoria": "polemico", "alcance": 43046, "engagement_rate": 3.67, "saves": 254, "retencion": null}], "diagnostico": { "resumen": "Recuperacion. IG 66.5K alcance con carrusel viral. FB 82K alcance.", "hallazgos": [{"texto": "Carrusel 'La solucion no esta en la jeringa' lidera con 43K alcance en IG.", "tipo": "positivo"}], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 361,
+          "alcance": 66540,
+          "engagement_total": 3009,
+          "engagement_rate": 4.52,
+          "saves": 378
+        },
+        "facebook": {
+          "alcance": 82370,
+          "engagement_total": 1978,
+          "engagement_rate": 2.4,
+          "video_reproducciones": 113524
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [
+        {
+          "titulo": "La solucion no esta en la jeringa",
+          "plataforma": "instagram",
+          "formato": "carrusel",
+          "categoria": "polemico",
+          "alcance": 43046,
+          "engagement_rate": 3.67,
+          "saves": 254,
+          "retencion": null
+        }
+      ],
+      "diagnostico": {
+        "resumen": "Recuperacion. IG 66.5K alcance con carrusel viral. FB 82K alcance.",
+        "hallazgos": [
+          {
+            "texto": "Carrusel 'La solucion no esta en la jeringa' lidera con 43K alcance en IG.",
+            "tipo": "positivo"
+          }
+        ],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W04", "fecha_inicio": "2026-01-19", "fecha_fin": "2026-01-25",
+      "id": "2026-W04",
+      "fecha_inicio": "2026-01-19",
+      "fecha_fin": "2026-01-25",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 108, "alcance": 26466, "engagement_total": 1728, "engagement_rate": 6.53, "saves": 164 },
-        "facebook": { "alcance": 68763, "engagement_total": 2363, "engagement_rate": 3.44, "video_reproducciones": 78681 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "IG ER subio a 6.53%. FB estable en 3.44%.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 108,
+          "alcance": 26466,
+          "engagement_total": 1728,
+          "engagement_rate": 6.53,
+          "saves": 164
+        },
+        "facebook": {
+          "alcance": 68763,
+          "engagement_total": 2363,
+          "engagement_rate": 3.44,
+          "video_reproducciones": 78681
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "IG ER subio a 6.53%. FB estable en 3.44%.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W05", "fecha_inicio": "2026-01-26", "fecha_fin": "2026-02-01",
+      "id": "2026-W05",
+      "fecha_inicio": "2026-01-26",
+      "fecha_fin": "2026-02-01",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 1216, "alcance": 91651, "engagement_total": 5048, "engagement_rate": 5.51, "saves": 920 },
-        "facebook": { "alcance": 117251, "engagement_total": 2489, "engagement_rate": 2.12, "video_reproducciones": 175602 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [{"titulo": "Nitrogeno sintetico se come tu cartera", "plataforma": "instagram", "formato": "carrusel", "categoria": "polemico", "alcance": 68822, "engagement_rate": 4.89, "saves": 764, "retencion": null}], "diagnostico": { "resumen": "Pico Q1. IG: 91.6K alcance, 1,216 follows, 920 saves. FB: 117K alcance. Carrusel 'nitrogeno sintetico' viral cross-platform.", "hallazgos": [{"texto": "1,216 nuevos seguidores en IG esta semana. Carrusel polemico como motor de crecimiento.", "tipo": "positivo"}], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 1216,
+          "alcance": 91651,
+          "engagement_total": 5048,
+          "engagement_rate": 5.51,
+          "saves": 920
+        },
+        "facebook": {
+          "alcance": 117251,
+          "engagement_total": 2489,
+          "engagement_rate": 2.12,
+          "video_reproducciones": 175602
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [
+        {
+          "titulo": "Nitrogeno sintetico se come tu cartera",
+          "plataforma": "instagram",
+          "formato": "carrusel",
+          "categoria": "polemico",
+          "alcance": 68822,
+          "engagement_rate": 4.89,
+          "saves": 764,
+          "retencion": null
+        }
+      ],
+      "diagnostico": {
+        "resumen": "Pico Q1. IG: 91.6K alcance, 1,216 follows, 920 saves. FB: 117K alcance. Carrusel 'nitrogeno sintetico' viral cross-platform.",
+        "hallazgos": [
+          {
+            "texto": "1,216 nuevos seguidores en IG esta semana. Carrusel polemico como motor de crecimiento.",
+            "tipo": "positivo"
+          }
+        ],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W06", "fecha_inicio": "2026-02-02", "fecha_fin": "2026-02-08",
+      "id": "2026-W06",
+      "fecha_inicio": "2026-02-02",
+      "fecha_fin": "2026-02-08",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 20, "alcance": 16260, "engagement_total": 938, "engagement_rate": 5.77, "saves": 88 },
-        "facebook": { "alcance": 35222, "engagement_total": 1069, "engagement_rate": 3.04, "video_reproducciones": 43639 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Correccion post-viral. ER se mantiene fuerte.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 20,
+          "alcance": 16260,
+          "engagement_total": 938,
+          "engagement_rate": 5.77,
+          "saves": 88
+        },
+        "facebook": {
+          "alcance": 35222,
+          "engagement_total": 1069,
+          "engagement_rate": 3.04,
+          "video_reproducciones": 43639
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Correccion post-viral. ER se mantiene fuerte.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W07", "fecha_inicio": "2026-02-09", "fecha_fin": "2026-02-15",
+      "id": "2026-W07",
+      "fecha_inicio": "2026-02-09",
+      "fecha_fin": "2026-02-15",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 14, "alcance": 16039, "engagement_total": 1414, "engagement_rate": 8.82, "saves": 84 },
-        "facebook": { "alcance": 21141, "engagement_total": 1266, "engagement_rate": 5.99, "video_reproducciones": 24931 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Mejor ER de Q1: IG 8.82%, FB 5.99%. Comunidad pura.", "hallazgos": [{"texto": "ER mas alto del trimestre en ambas plataformas pese a bajo alcance.", "tipo": "positivo"}], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 14,
+          "alcance": 16039,
+          "engagement_total": 1414,
+          "engagement_rate": 8.82,
+          "saves": 84
+        },
+        "facebook": {
+          "alcance": 21141,
+          "engagement_total": 1266,
+          "engagement_rate": 5.99,
+          "video_reproducciones": 24931
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Mejor ER de Q1: IG 8.82%, FB 5.99%. Comunidad pura.",
+        "hallazgos": [
+          {
+            "texto": "ER mas alto del trimestre en ambas plataformas pese a bajo alcance.",
+            "tipo": "positivo"
+          }
+        ],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W08", "fecha_inicio": "2026-02-16", "fecha_fin": "2026-02-22",
+      "id": "2026-W08",
+      "fecha_inicio": "2026-02-16",
+      "fecha_fin": "2026-02-22",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 291, "alcance": 47816, "engagement_total": 2823, "engagement_rate": 5.90, "saves": 343 },
-        "facebook": { "alcance": 125633, "engagement_total": 3396, "engagement_rate": 2.70, "video_reproducciones": 176025 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [{"titulo": "Heredaste el mando o invertiste", "plataforma": "facebook", "formato": "foto", "categoria": "polemico", "alcance": 53753, "engagement_rate": 1.73, "saves": null, "retencion": null}], "diagnostico": { "resumen": "Segundo pico de Q1. FB 125K alcance, 3,396 engagement. Dos virales simultaneos.", "hallazgos": [{"texto": "306 comentarios en post 'heredaste el mando'. Record del trimestre.", "tipo": "positivo"}], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 291,
+          "alcance": 47816,
+          "engagement_total": 2823,
+          "engagement_rate": 5.9,
+          "saves": 343
+        },
+        "facebook": {
+          "alcance": 125633,
+          "engagement_total": 3396,
+          "engagement_rate": 2.7,
+          "video_reproducciones": 176025
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [
+        {
+          "titulo": "Heredaste el mando o invertiste",
+          "plataforma": "facebook",
+          "formato": "foto",
+          "categoria": "polemico",
+          "alcance": 53753,
+          "engagement_rate": 1.73,
+          "saves": null,
+          "retencion": null
+        }
+      ],
+      "diagnostico": {
+        "resumen": "Segundo pico de Q1. FB 125K alcance, 3,396 engagement. Dos virales simultaneos.",
+        "hallazgos": [
+          {
+            "texto": "306 comentarios en post 'heredaste el mando'. Record del trimestre.",
+            "tipo": "positivo"
+          }
+        ],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W09", "fecha_inicio": "2026-02-23", "fecha_fin": "2026-03-01",
+      "id": "2026-W09",
+      "fecha_inicio": "2026-02-23",
+      "fecha_fin": "2026-03-01",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 104, "alcance": 27366, "engagement_total": 2360, "engagement_rate": 8.62, "saves": 240 },
-        "facebook": { "alcance": 44741, "engagement_total": 1909, "engagement_rate": 4.27, "video_reproducciones": 51247 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "IG 8.62% ER. FB 4.27% ER. Buen balance.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 104,
+          "alcance": 27366,
+          "engagement_total": 2360,
+          "engagement_rate": 8.62,
+          "saves": 240
+        },
+        "facebook": {
+          "alcance": 44741,
+          "engagement_total": 1909,
+          "engagement_rate": 4.27,
+          "video_reproducciones": 51247
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "IG 8.62% ER. FB 4.27% ER. Buen balance.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W10", "fecha_inicio": "2026-03-02", "fecha_fin": "2026-03-08",
+      "id": "2026-W10",
+      "fecha_inicio": "2026-03-02",
+      "fecha_fin": "2026-03-08",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 137, "alcance": 48978, "engagement_total": 2602, "engagement_rate": 5.31, "saves": 355 },
-        "facebook": { "alcance": 51170, "engagement_total": 1797, "engagement_rate": 3.51, "video_reproducciones": 60323 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Consistencia. IG 5.31%, FB 3.51%.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 137,
+          "alcance": 48978,
+          "engagement_total": 2602,
+          "engagement_rate": 5.31,
+          "saves": 355
+        },
+        "facebook": {
+          "alcance": 51170,
+          "engagement_total": 1797,
+          "engagement_rate": 3.51,
+          "video_reproducciones": 60323
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Consistencia. IG 5.31%, FB 3.51%.",
+        "hallazgos": [],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W11", "fecha_inicio": "2026-03-09", "fecha_fin": "2026-03-15",
+      "id": "2026-W11",
+      "fecha_inicio": "2026-03-09",
+      "fecha_fin": "2026-03-15",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 49, "alcance": 21279, "engagement_total": 1446, "engagement_rate": 6.80, "saves": 157 },
-        "facebook": { "alcance": 115414, "engagement_total": 2760, "engagement_rate": 2.39, "video_reproducciones": 122060 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [{"titulo": "Biomasa acomodada no pasto tirado", "plataforma": "facebook", "formato": "video", "categoria": "educativo", "alcance": 66784, "engagement_rate": 1.86, "saves": null, "retencion": 32}], "diagnostico": { "resumen": "FB tercer pico viral (115K). Ciclo confirmado: W05-W08-W11.", "hallazgos": [{"texto": "Ciclo viral de 3 semanas confirmado en Facebook.", "tipo": "positivo"}], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 49,
+          "alcance": 21279,
+          "engagement_total": 1446,
+          "engagement_rate": 6.8,
+          "saves": 157
+        },
+        "facebook": {
+          "alcance": 115414,
+          "engagement_total": 2760,
+          "engagement_rate": 2.39,
+          "video_reproducciones": 122060
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [
+        {
+          "titulo": "Biomasa acomodada no pasto tirado",
+          "plataforma": "facebook",
+          "formato": "video",
+          "categoria": "educativo",
+          "alcance": 66784,
+          "engagement_rate": 1.86,
+          "saves": null,
+          "retencion": 32
+        }
+      ],
+      "diagnostico": {
+        "resumen": "FB tercer pico viral (115K). Ciclo confirmado: W05-W08-W11.",
+        "hallazgos": [
+          {
+            "texto": "Ciclo viral de 3 semanas confirmado en Facebook.",
+            "tipo": "positivo"
+          }
+        ],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W12", "fecha_inicio": "2026-03-16", "fecha_fin": "2026-03-22",
+      "id": "2026-W12",
+      "fecha_inicio": "2026-03-16",
+      "fecha_fin": "2026-03-22",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 78, "alcance": 27051, "engagement_total": 2350, "engagement_rate": 8.69, "saves": 229 },
-        "facebook": { "alcance": 73440, "engagement_total": 2961, "engagement_rate": 4.03, "video_reproducciones": 83321 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Semana ideal. IG 8.69% ER, FB 4.03% con 73K alcance.", "hallazgos": [{"texto": "Combinacion ideal de ER alto + buen alcance en ambas plataformas.", "tipo": "positivo"}], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 78,
+          "alcance": 27051,
+          "engagement_total": 2350,
+          "engagement_rate": 8.69,
+          "saves": 229
+        },
+        "facebook": {
+          "alcance": 73440,
+          "engagement_total": 2961,
+          "engagement_rate": 4.03,
+          "video_reproducciones": 83321
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [],
+      "diagnostico": {
+        "resumen": "Semana ideal. IG 8.69% ER, FB 4.03% con 73K alcance.",
+        "hallazgos": [
+          {
+            "texto": "Combinacion ideal de ER alto + buen alcance en ambas plataformas.",
+            "tipo": "positivo"
+          }
+        ],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W13", "fecha_inicio": "2026-03-23", "fecha_fin": "2026-03-29",
+      "id": "2026-W13",
+      "fecha_inicio": "2026-03-23",
+      "fecha_fin": "2026-03-29",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 1347, "alcance": 98112, "engagement_total": 4829, "engagement_rate": 4.92, "saves": 762 },
-        "facebook": { "alcance": 39655, "engagement_total": 1280, "engagement_rate": 3.23, "video_reproducciones": 52642 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [{"titulo": "40 vacas flacas no es negocio", "plataforma": "instagram", "formato": "carrusel", "categoria": "polemico", "alcance": 48264, "engagement_rate": 3.42, "saves": 298, "retencion": null}, {"titulo": "Te vendieron el pasto perfecto", "plataforma": "instagram", "formato": "carrusel", "categoria": "polemico", "alcance": 34505, "engagement_rate": 5.58, "saves": 346, "retencion": null}], "diagnostico": { "resumen": "IG explosivo: 98K alcance, 1,347 follows, 762 saves. Dos carruseles virales.", "hallazgos": [{"texto": "1,347 follows en una semana. Carruseles polemicos confirmados como motor de crecimiento en IG.", "tipo": "positivo"}], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_nuevos": 1347,
+          "alcance": 98112,
+          "engagement_total": 4829,
+          "engagement_rate": 4.92,
+          "saves": 762
+        },
+        "facebook": {
+          "alcance": 39655,
+          "engagement_total": 1280,
+          "engagement_rate": 3.23,
+          "video_reproducciones": 52642
+        },
+        "youtube": {},
+        "tiktok": {}
+      },
+      "top_contenidos": [
+        {
+          "titulo": "40 vacas flacas no es negocio",
+          "plataforma": "instagram",
+          "formato": "carrusel",
+          "categoria": "polemico",
+          "alcance": 48264,
+          "engagement_rate": 3.42,
+          "saves": 298,
+          "retencion": null
+        },
+        {
+          "titulo": "Te vendieron el pasto perfecto",
+          "plataforma": "instagram",
+          "formato": "carrusel",
+          "categoria": "polemico",
+          "alcance": 34505,
+          "engagement_rate": 5.58,
+          "saves": 346,
+          "retencion": null
+        }
+      ],
+      "diagnostico": {
+        "resumen": "IG explosivo: 98K alcance, 1,347 follows, 762 saves. Dos carruseles virales.",
+        "hallazgos": [
+          {
+            "texto": "1,347 follows en una semana. Carruseles polemicos confirmados como motor de crecimiento en IG.",
+            "tipo": "positivo"
+          }
+        ],
+        "acciones_recomendadas": []
+      }
     },
     {
-      "id": "2026-W14", "fecha_inicio": "2026-03-30", "fecha_fin": "2026-04-05",
+      "id": "2026-W14",
+      "fecha_inicio": "2026-03-30",
+      "fecha_fin": "2026-04-05",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 153, "alcance": 40575, "engagement_total": 2642, "engagement_rate": 6.51, "saves": 338 },
-        "facebook": { "alcance": 46150, "engagement_total": 1494, "engagement_rate": 3.24, "video_reproducciones": 49108 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Estable. IG 6.51%, FB 3.24%.", "hallazgos": [], "acciones_recomendadas": [] }
+        "instagram": {
+          "seguidores_total": null,
+          "seguidores_nuevos": 290,
+          "alcance": 53241,
+          "engagement_total": 3232,
+          "engagement_rate": 6.07,
+          "saves": 433,
+          "shares": 469,
+          "reels_reproducciones": 26460
+        },
+        "facebook": {
+          "seguidores_total": null,
+          "alcance": 50820,
+          "engagement_total": 1668,
+          "engagement_rate": 3.28,
+          "video_reproducciones": 54597,
+          "shares": 96
+        },
+        "youtube": {
+          "suscriptores_total": null,
+          "suscriptores_nuevos": null,
+          "vistas": 12766,
+          "watch_time_horas": null,
+          "ctr_miniaturas": null,
+          "retencion_promedio": null
+        },
+        "tiktok": {}
+      },
+      "top_contenidos": [
+        {
+          "titulo": "La vaca no necesita que la estés vigilando 24/7 en un pe",
+          "plataforma": "instagram",
+          "formato": "carrusel",
+          "categoria": "polemico",
+          "alcance": 22319,
+          "engagement_rate": 4.01,
+          "saves": 138,
+          "retencion": null
+        },
+        {
+          "titulo": "No se trata solo de pasto.",
+          "plataforma": "instagram",
+          "formato": "video",
+          "categoria": "educativo",
+          "alcance": 10657,
+          "engagement_rate": 7.78,
+          "saves": 111,
+          "retencion": null
+        },
+        {
+          "titulo": "No se trata solo de pasto.",
+          "plataforma": "facebook",
+          "formato": "video",
+          "categoria": "educativo",
+          "alcance": 18961,
+          "engagement_rate": 3.49,
+          "saves": null,
+          "retencion": null
+        }
+      ],
+      "diagnostico": {
+        "resumen": "Semana sólida en IG: 53K alcance, ER 6.07%, 290 nuevos seguidores. FB estable (51K alcance, 3.28% ER). El carrusel \"La vaca no necesita vigilancia 24/7\" lideró IG con 22K alcance.",
+        "hallazgos": [
+          {
+            "texto": "IG mantiene ER por encima de 6% por cuarta semana consecutiva. Audiencia profundamente comprometida.",
+            "tipo": "positivo"
+          },
+          {
+            "texto": "Carruseles polémicos siguen siendo el formato ganador para crecimiento en IG (122 follows del top post).",
+            "tipo": "positivo"
+          }
+        ],
+        "acciones_recomendadas": [
+          "Mantener cadencia de 7 posts/semana con al menos 2 carruseles polémicos.",
+          "Incluir CTA a web en posts promocionales (única fuente de tráfico)."
+        ]
+      }
     },
     {
-      "id": "2026-W15", "fecha_inicio": "2026-04-06", "fecha_fin": "2026-04-10",
+      "id": "2026-W15",
+      "fecha_inicio": "2026-04-06",
+      "fecha_fin": "2026-04-12",
       "plataformas": {
-        "instagram": { "seguidores_nuevos": 6, "alcance": 12443, "engagement_total": 800, "engagement_rate": 6.43, "saves": 76 },
-        "facebook": { "alcance": 21363, "engagement_total": 591, "engagement_rate": 2.77, "video_reproducciones": 25815 },
-        "youtube": {}, "tiktok": {}
-      }, "top_contenidos": [], "diagnostico": { "resumen": "Semana parcial. Datos consistentes con promedios.", "hallazgos": [], "acciones_recomendadas": ["Completar semana con 3 posts adicionales."] }
+        "instagram": {
+          "seguidores_total": null,
+          "seguidores_nuevos": 23,
+          "alcance": 28270,
+          "engagement_total": 1439,
+          "engagement_rate": 5.09,
+          "saves": 147,
+          "shares": 110,
+          "reels_reproducciones": 22752
+        },
+        "facebook": {
+          "seguidores_total": null,
+          "alcance": 44947,
+          "engagement_total": 1241,
+          "engagement_rate": 2.76,
+          "video_reproducciones": 52025,
+          "shares": 66
+        },
+        "youtube": {
+          "suscriptores_total": null,
+          "suscriptores_nuevos": null,
+          "vistas": 17695,
+          "watch_time_horas": null,
+          "ctr_miniaturas": null,
+          "retencion_promedio": null
+        },
+        "tiktok": {}
+      },
+      "top_contenidos": [
+        {
+          "titulo": "¿Sigues gastando en diésel y fierros para aflojar la tierr",
+          "plataforma": "instagram",
+          "formato": "carrusel",
+          "categoria": "polemico",
+          "alcance": 8636,
+          "engagement_rate": 3.97,
+          "saves": 37,
+          "retencion": null
+        },
+        {
+          "titulo": "Nadie le pidió nada a la vaca.",
+          "plataforma": "instagram",
+          "formato": "video",
+          "categoria": "demostrativo",
+          "alcance": 5370,
+          "engagement_rate": 3.46,
+          "saves": 22,
+          "retencion": null
+        },
+        {
+          "titulo": "Johan Zietsman tiene un solo criterio",
+          "plataforma": "facebook",
+          "formato": "video",
+          "categoria": "testimonial",
+          "alcance": 13854,
+          "engagement_rate": 2.44,
+          "saves": null,
+          "retencion": null
+        }
+      ],
+      "diagnostico": {
+        "resumen": "Semana de corrección post-pico. IG: 28K alcance, ER 5.09%. FB: 45K alcance, 2.76% ER. YT recibió 17.7K vistas, mejor semana del mes. Engagement saludable a pesar del menor alcance.",
+        "hallazgos": [
+          {
+            "texto": "YouTube tuvo su mejor semana en vistas (17.7K) gracias al estreno de \"Modelos de Negocio - #68\" (3.9K vistas en su primera semana).",
+            "tipo": "positivo"
+          },
+          {
+            "texto": "IG bajó alcance pero mantuvo ER >5%, señal de audiencia core sólida.",
+            "tipo": "neutro"
+          }
+        ],
+        "acciones_recomendadas": [
+          "Aprovechar momentum de YouTube con clips cortos derivados de los podcasts.",
+          "Preparar siguiente carrusel polémico para reactivar alcance en IG."
+        ]
+      }
+    },
+    {
+      "id": "2026-W16",
+      "fecha_inicio": "2026-04-13",
+      "fecha_fin": "2026-04-19",
+      "plataformas": {
+        "instagram": {
+          "seguidores_total": null,
+          "seguidores_nuevos": 13,
+          "alcance": 13884,
+          "engagement_total": 927,
+          "engagement_rate": 6.68,
+          "saves": 65,
+          "shares": 94,
+          "reels_reproducciones": 20110
+        },
+        "facebook": {
+          "seguidores_total": null,
+          "alcance": 55163,
+          "engagement_total": 1838,
+          "engagement_rate": 3.33,
+          "video_reproducciones": 57251,
+          "shares": 77
+        },
+        "youtube": {
+          "suscriptores_total": null,
+          "suscriptores_nuevos": null,
+          "vistas": 16084,
+          "watch_time_horas": null,
+          "ctr_miniaturas": null,
+          "retencion_promedio": null
+        },
+        "tiktok": {}
+      },
+      "top_contenidos": [
+        {
+          "titulo": "La regla es bien simple:",
+          "plataforma": "instagram",
+          "formato": "video",
+          "categoria": "polemico",
+          "alcance": 3289,
+          "engagement_rate": 10.67,
+          "saves": 24,
+          "retencion": null
+        },
+        {
+          "titulo": "La fertilidad práctica no es lo que la raza puede en papel. ",
+          "plataforma": "instagram",
+          "formato": "video",
+          "categoria": "polemico",
+          "alcance": 1887,
+          "engagement_rate": 4.08,
+          "saves": 4,
+          "retencion": null
+        },
+        {
+          "titulo": "Come.",
+          "plataforma": "facebook",
+          "formato": "video",
+          "categoria": "polemico",
+          "alcance": 13673,
+          "engagement_rate": 3.38,
+          "saves": null,
+          "retencion": null
+        }
+      ],
+      "diagnostico": {
+        "resumen": "Semana de bajo alcance pero excelente ER en IG (6.68% con 14K alcance). FB tuvo el mejor alcance del mes (55K) gracias a video viral de Daniel sobre potreros de parición. Volumen alto: 10 posts en cada plataforma.",
+        "hallazgos": [
+          {
+            "texto": "IG ER 6.68% es de los mejores del trimestre. Calidad sobre cantidad.",
+            "tipo": "positivo"
+          },
+          {
+            "texto": "FB recuperó alcance con post recordando lecciones clave (55K). Confirma que el contenido evergreen funciona.",
+            "tipo": "positivo"
+          },
+          {
+            "texto": "IG follows bajos (13) sugiere que el contenido no está atrayendo audiencia nueva esta semana.",
+            "tipo": "negativo"
+          }
+        ],
+        "acciones_recomendadas": [
+          "Volver a estructura mito-datos-alternativa en carruseles para impulsar follows.",
+          "Replicar formato del top FB (video reflexivo sobre prácticas) en IG como Reel."
+        ]
+      }
+    },
+    {
+      "id": "2026-W17",
+      "fecha_inicio": "2026-04-20",
+      "fecha_fin": "2026-04-26",
+      "plataformas": {
+        "instagram": {
+          "seguidores_total": null,
+          "seguidores_nuevos": 473,
+          "alcance": 65737,
+          "engagement_total": 5182,
+          "engagement_rate": 7.88,
+          "saves": 555,
+          "shares": 1113,
+          "reels_reproducciones": 41300
+        },
+        "facebook": {
+          "seguidores_total": null,
+          "alcance": 76721,
+          "engagement_total": 2041,
+          "engagement_rate": 2.66,
+          "video_reproducciones": 91664,
+          "shares": 105
+        },
+        "youtube": {
+          "suscriptores_total": null,
+          "suscriptores_nuevos": null,
+          "vistas": 15219,
+          "watch_time_horas": null,
+          "ctr_miniaturas": null,
+          "retencion_promedio": null
+        },
+        "tiktok": {}
+      },
+      "top_contenidos": [
+        {
+          "titulo": "¿Cuidado o negligencia? 🐂⚠️",
+          "plataforma": "instagram",
+          "formato": "video",
+          "categoria": "polemico",
+          "alcance": 24876,
+          "engagement_rate": 8.2,
+          "saves": 186,
+          "retencion": null
+        },
+        {
+          "titulo": "Si no eres capaz de mantener 4 vacas gordas solo con pasto, ",
+          "plataforma": "instagram",
+          "formato": "carrusel",
+          "categoria": "polemico",
+          "alcance": 16496,
+          "engagement_rate": 7.67,
+          "saves": 158,
+          "retencion": null
+        },
+        {
+          "titulo": "¿Cuidado o negligencia? 🐂⚠️",
+          "plataforma": "facebook",
+          "formato": "video",
+          "categoria": "polemico",
+          "alcance": 30033,
+          "engagement_rate": 2.45,
+          "saves": null,
+          "retencion": null
+        }
+      ],
+      "diagnostico": {
+        "resumen": "Semana explosiva: mejor semana del mes en IG (66K alcance, 7.88% ER, 473 nuevos seguidores) y FB (77K alcance). El Reel \"La vaca no necesita vigilancia\" llegó a 25K alcance con 487 shares. Datos parciales (cierre 24 abril).",
+        "hallazgos": [
+          {
+            "texto": "IG ER 7.88% es el más alto del Q2. Combinación ideal de alcance amplio + engagement profundo.",
+            "tipo": "positivo"
+          },
+          {
+            "texto": "473 nuevos seguidores en IG en una semana, segundo mejor número del trimestre.",
+            "tipo": "positivo"
+          },
+          {
+            "texto": "Reel \"potrero de parición\" generó 487 shares (récord trimestral) y 288 follows individuales.",
+            "tipo": "positivo"
+          }
+        ],
+        "acciones_recomendadas": [
+          "Replicar fórmula del Reel \"potrero de parición\": tema controversial + datos + CTA en comentarios.",
+          "Capitalizar 473 nuevos seguidores con contenido de profundidad técnica las próximas 2 semanas.",
+          "Considerar pauta para amplificar el carrusel \"Si no eres capaz\" (16K alcance orgánico)."
+        ]
+      }
     }
   ],
   "youtube_trimestral": {
@@ -242,9 +1216,27 @@
     "duracion_promedio_vista_min": 11.7,
     "pct_reproducido": 26.14,
     "por_tipo": {
-      "shorts": { "videos": 155, "vistas": 75945, "horas": 412, "suscriptores": 100, "ctr": 3.72 },
-      "largos": { "videos": 326, "vistas": 170819, "horas": 22196, "suscriptores": 840, "ctr": 4.21 },
-      "clases": { "videos": 19, "vistas": 59312, "horas": 20295, "suscriptores": 683, "ctr": 9.97 }
+      "shorts": {
+        "videos": 155,
+        "vistas": 75945,
+        "horas": 412,
+        "suscriptores": 100,
+        "ctr": 3.72
+      },
+      "largos": {
+        "videos": 326,
+        "vistas": 170819,
+        "horas": 22196,
+        "suscriptores": 840,
+        "ctr": 4.21
+      },
+      "clases": {
+        "videos": 19,
+        "vistas": 59312,
+        "horas": 20295,
+        "suscriptores": 683,
+        "ctr": 9.97
+      }
     }
   },
   "contenidos": []
